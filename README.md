@@ -5,5 +5,5 @@
 Row - logo, Row - banner, Row - content, Row - promos, Row - callouts, 
 Raw - footer.
 
-
+ Added break tag clear both
 
