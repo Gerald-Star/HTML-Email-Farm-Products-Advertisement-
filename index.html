@@ -10,12 +10,34 @@
   <title>HTML Email Farm Products Advertisement</title>
 
   <style type="text/css">
+    /* Import fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
     /* Preview Text*/
     body {
       padding: 0px;
       margin: 0px;
     }
 
+    /* Animation */
+
+    .promo {
+      animation: myPromo 4s ease-in 0s 4 reverse forwards;
+    }
+
+    @keyframes myPromo {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.2;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
 
     @media only screen and (max-width: 660px) {
       table.container {
@@ -142,6 +164,19 @@
 
       }
 
+      /* Video for medium screen */
+
+
+      video {
+        width: 416px !important;
+        height: 312px !important;
+      }
+
+      video img {
+        width: 416px !important;
+        height: 312px !important;
+      }
+
       /*
 
       td.callout table p {
@@ -255,6 +290,18 @@
         background-position: 04px -17px;
       }
 
+      /* Video for small screen ends */
+
+      video {
+        width: 300px !important;
+        height: 255px !important;
+      }
+
+      video img {
+        width: 300px !important;
+        height: 255px !important;
+      }
+
 
     }
   </style>
@@ -278,8 +325,9 @@
           <tr>
             <td valign="top" class="logo" bgcolor="#ffffff" style="padding: 10px 20px 0px 30px;
              border-left: 1px solid #dbc064; border-left: 1px solid #dbc064; border-top: 1px solid #dbc064;">
-              <a href=""> <img style="margin-left: -15px;" src="images/logo_large.gif" alt="Our Vineyard" width="585"
-                  height="45" border="0"></a>
+              <a href="#"> <img style="margin-left: -15px;" src="images/logo_large.gif" alt="Our Vineyard" width="585"
+                  height="45" border="0">
+              </a>
 
             </td>
           </tr>
@@ -288,7 +336,8 @@
             <td valign="top" class="headline" bgcolor="#ffffff" style="padding: 15px 20px 5px 30px; 
             border-left: 1px solid #dbc064; border-right: 1px solid #dbc064; 
             font-family: Ariel, Helvetica, sans-serif; font-size: 16px; line-height: 22px;">
-              <h1 style="margin: 0px 0px 15px 0px; font-weight: normal; font-size: 32px; color: #723c7f;">
+              <h1
+                style="margin: 0px 0px 15px 0px; font-family: 'Sofia', cursive; font-weight: normal; font-size: 32px; color: #723c7f;">
                 Napa Valley Vineyard</h1>
 
             </td>
@@ -297,7 +346,9 @@
           <tr>
             <td valign="top" bgcolor="#f5f2e5" class="banner"
               style="border-left: 1px solid #dbc064; border-right: 1px solid #dbc064;">
-              <a href=""><img src="images/banner_large.jpg" alt="Photo of Our Vineyard" width="638" height="180"></a>
+              <a href=""><img class="banner" src="images/banner_large.jpg" alt="Photo of Our Vineyard" width="638"
+                  height="180">
+              </a>
 
             </td>
           </tr>
@@ -308,7 +359,8 @@
             font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; color: #654308;
             background: #f5f2e5 url(images/banner_large_ghost.jpg) no-repeat 0px 0px;">
 
-              <h2 style="font-size: 24px; color: #723c7f; margin: 0px 0px 15px 0px;">Welcome to Our Vineyard</h2>
+              <h2 style=" font-family: 'Sofia', cursive; font-size: 24px; color: #723c7f; margin: 0px 0px 15px 0px;">
+                Welcome to Our Vineyard</h2>
               <!--CTA Button to Right-->
               <table width="160" align="right" class="button" style="margin: 0px 0px 10px 30px;">
                 <tr>
@@ -343,7 +395,7 @@
                 <tr>
                   <td>
                     <img src="images/promo_1_large.jpg" alt="Promo Image 1" class="promo">
-                    <h3 style="font-size: 16px;">Promotion of the Month</h3>
+                    <h3 style=" font-family: 'Sofia', cursive; font-size: 16px;">Promotion of the Month</h3>
                     We are offering a special promotion this month on our award-winning Cabernet Sauvignon.
                     This wine is rich and full-bodied with flavors of black cherry, plum, and vanilla.
                     It pairs perfectly with grilled steak or roasted lamb.
@@ -360,7 +412,7 @@
                 <tr>
                   <td>
                     <img src="images/promo_2_large.jpg" alt="Promo Image 2" class="promo">
-                    <h3 style="font-size: 16px;">Promotion of the Month</h3>
+                    <h3 style=" font-family: 'Sofia', cursive; font-size: 16px;">Promotion of the Month</h3>
                     Get the best deals on our award-winning wines. We offer a wide selection of reds, whites, and
                     sparkling wines to suit every taste. Our wines are made with the finest grapes and aged to
                     perfection.
@@ -377,6 +429,27 @@
             </td>
           </tr>
           <!--Promo Row Ends-->
+
+          <!---PROMO ROWS WITH VIDEO-->
+
+          <tr>
+            <td valign="top" bgcolor="#f5f2e5" class="promos" style="padding: 10px 30px 25px 30px; border-right: 1px solid #dbc064; border-left: 1px solid #dbc064;
+                         background-color: #f5f2e5; font-family: Arial, Helvetica, sans-serif;">
+
+              <!--Promo 3 Video-->
+
+              <video width="570" height="428" poster="video/our_vineyard.jpg" controls="controls">
+
+                <source src="video/our_vineyard.mp4" type="video/mp4">
+                <source src="video/our_vineyard.webm" type="video/webm">
+
+                <a href="#"> <img src="video/our_vineyard.jpg" alt="vineyard"></a>
+              </video>
+            </td>
+          </tr>
+
+
+          <!--PROMO ROWS WITH VIDEO ENDS-->
 
 
           <!--Callout Row-->
